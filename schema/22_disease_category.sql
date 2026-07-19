@@ -1,0 +1,13 @@
+CREATE TABLE DiseaseCategory (
+    category_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    category_name TEXT NOT NULL UNIQUE,
+
+    description TEXT,
+
+    status TEXT NOT NULL DEFAULT 'Active',
+
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
